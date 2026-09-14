@@ -8,12 +8,38 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+    height: 60px;
+    padding: 30px;
+}
+.calculator-logo{
+    height: 40px;
+    width: 100px;
+}
+.logo{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACUCAMAAABGFyDbAAABGlBMVEX////R5/j/zQAjHyAAbfDtHCQAAAAkiP+byf/R0dEOCAnV6/2aqrZ+fn4UDhC5zNoNAAAAACHf9v+ezf8cGiD/0QCwjhT1ywZmb3gfGhorKi0AcPckGQDC1uQAHyA3ODsbQYJqVRxANR98h5EjEQBSV110lLyoHSIaHyAjHRZiHyGl1v8kjP+svcwKZd0fMVghKkQjPWojZLQZCgANYNGLstokgesjJjU1HyAket3OHSMjRXsUUq0eNWQcO3RKTVLVsQ7m5eWxsLGNjIycm5v/2gAWFCDBwMCMmaSZfBbLpg9JOx50XxkZRY7qvAdcTBo1LB+DahkjVpmDosW73f+PHiJRHiF6HiG9HSM9R1dkfZ1UaIRMW3EwNUGTP2ASAAAIaklEQVR4nO2cfV+bSBDHi7Q0QoRNQgwbodRGrDnFRGNMbdVUbdLE+nBtba+1+v7fxu0s5IGFtAmBHj35/ZVPmCxfZmF3dpbMo0ep/vc6OT1bilxnpyfzMC2eIUFAcuSCVs8WwzpqSRYwH5OwIC+FctmpIMbF5EgUTmenWhLoRclCLJJpNwhL4aiQqWUVTopYnJLVTBSG6wyoMKoYpJEYJElGBYHDhLNZqN4DlWwasTC5ZIYpA9f76alO2uRK5LZLFXUfuh0gGW3ChdvTP4/viLMwz8HPJc5QIpfhNk1OwgvvpsaC5wRl6U8NcnNGLlOjHSFlETzr01LBnSVr1NE9WY5hRMWy3KM9qckz3F1LYGyT30l2XMM8HrRPHDDlIHFiYTI25MnFGGWgykUu4Cob5AR5Mkpga7qb/sTEvGzloQvJxai5/nLE6udU0h3QjXlL5rE5HdYiuRhEf0Sf4PNOMWJ1zun4AxdegZt+ulhikUzRAjyHedKH6nVpIRIVO6Wrq2KnCJ9L1yrpRcDKkv4Qw2CtRgNVPL9Wuyrfv6JcqwnBKvVzXXgCc+p5MTlYnYucOzKoXeBKBlbxPEeJwGGqmhishVUC1P3Qv6D9uFxMBlbx6m+VV/lSpwNe614kBestcVauTzqvU1VpiwnCWgasFylWivUgsMhw1f1IIpEFGCCSgrVw9UEFd129vXBHimRgFfsw+XSrPMw+ubeJwSpBPOood9FJSieSuZo6CqhWIaxMCBa5669zuW431/1YTFC8Bf143r+4WL4qRhCdkiWQ+qFUjAisQ1R0EMmTic3QWBqCOKQUuWCcQFpYLMmGNGWOfxGxVBguRLqsDoPFceAuEuZGLHgikZPjCIUlcU4uMXoh08klhfOWZGiyGH1eXpSdTFJYLLi/KlrkqtiD1sNicXHkdIdthseKVSlWipVi/dlYUsDmirfpSbsnkw24ecctictWLEZab2yLihhoVnv8cNvSstyYgdHT2BYqA4PwcyLy71Ujc+RLxRR9k6YomsrIH2ZAA/PNiZKBAzeG8dCZthi4zYFFe+iOQAMRGXNEEDTeqjKi7TrukGCPK8gA885xhRozx+E3cvh4i/6I1+s7HtV0cl4Rdjk4qeIY1Dyq6+RLoQJceYu0hfVakMHwDLPH8uST/mZ/y6vdFrRKvWGRC9cPtxkdktNii3oDsFs+g+f6PLE8LMhwff8po61PpFVBIWc1yNKoWlt5zGilViULG9hqUshZ9UvWYGW7Xp1znVjdYamebu2uAZbkYOnP/VjEGxRLoliHPoPHR/891lqKlWKlWCnWH4YV/XBq0slni8XyTj51P1bdM/n4uMnkg+dJu8HrAPrOwb5Xu7p3qr7c807Ee5feqdo3l+8dwVRdCZ92g3BLb9W9Aiqk0SiuJwQYtCg2fYlGogGbXg8wQPOm3XjsFXxTVpzgk74axvuO87LpRKcKfR3G38CcabeyEBTyysIgJlbKcqBBWRlE1UKggVCeK+3GaVhglxAIWXZ+uK6xZNZAFGRruDbK25ZvkSIKWOPmSrtJnNLzJc086y3On5er2B6DrM+gp8y3IKOLzzwj3+o0vMH/brGfVCyJ6QQ2xeDrJP/xiQ2EzzQb2Qqj4Q07ySA7/hotPDQTDUI/iT1eYF/PFJA2SjFwWoABr41yMoaG/Abl3nxPYjswhSALg9HSMFGAAUaD3AiJIYKGUyy0ncOfUZhRvhI4yPNufEAM2hM2X8S2gwUxRqCcZAC3HgJLsuFKq7jl1SjF4CYpeO9xfphicK/rGf/KI34DPA7z100oLBrY1A4YQbiFkRPYEG79eI/RMRg4UzF08caX1159+7oBgQ1poRAGaxAGsnpTHQ8DWytMmLey0hoPAzf+ecLq9SveCQPDYUUSND976cN68tcGDZpvkolVSCZWJpFYm4nEkjKJxLpJJtZmivXAsWpsCmKGBHhMWPB/F/0TOyUe0O0CGra06XYBi+VsF8SG5cQtaztvvIJNHdndXKF7QkfHHh3Bpg8NEOLBcgKXwK0o2VntG2jSVhQyuNiwJAUFZhCw0BssEYJiZqByfx+PtyS7jWQm34JlxPeGKwibDzAQedvdt4sHiyxgeprJyKoMFz50z9fyGQx2jWPD4saXhGNrv7HPAQaD72LEmkcPEevnbzkEGPwGLIkzbEaK997ilIkG8T2JtuX7wzcq90ZgUq/t/zN3uxfvkyhV5IDxFLvvQYK0oCQFFrQ4sZy8e4CQ5fpKm2AgaDGO8jSrjnXvjAevQQx2A+C0vimRToo0HospggBnVVu7jGoQt2CaAofIp1o7ZFSrum+FxBRvwZ9M+QNfDmIHchA0k0Tjre0VRo+Bux0fFg2a/dGpN2g+9kenxw82lk+xUqwUK8WKAYsYNH9nDsLB4n45ym9mmihCLH688ELVNyfu1wZzohE8J27TOfEmQwR5+a8+qm/kDI3vgHXbmLrwgrdMBb/2iYkgWmtusp+EW1AwQr30BhCXKoFt/CgQqs172MV49dKrL89gF2OdGGzeNaYuU8EW9dDXvGLjLV5nROPAJjiLdhK/8YwRBLD3TcBqTF/UY4oSKG5Q7LzuEqTG7WaGct0FG2DqrMJnYfoSKL8qGIOxYA1j+YoQYNBAPzKuCBcOMJBvoY8zpA9nKEf08/I6ZWt8EWlr5dGhBlX57nMhM+Ra/843GN3fQQ8SZ8mzlNf5RTEig1knjgzspqPMiIqcPNP0qUCpCupsxYh+XrqJXVS7BjebBXImUIZRgZXzbfM7nq100+yFroBpJhUKzXv6SM9UeW6msmA3MyKB+5q3IcqCTV1EDdw0szLN9bv7Bh1oQhZ3i6nknDtozE6V1AJ9SS1n+CihxR8dlyWwVGaqP0P/AvyoB6yWoXBlAAAAAElFTkSuQmCC");
+    height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+.header-content h2{
+    
+}
+.header-content-space{
+    width: 100%;
+}
+
 .calculator-container{
     background-color: #f2f2f2;
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 34px;
     border: 1px solid #ccc;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
